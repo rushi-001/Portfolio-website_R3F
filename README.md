@@ -1,4 +1,4 @@
-# <img src="https://wintrcat.uk/static/twigwhite.png" height="32"> WintrCat
+# <img src="https://wintrcat.uk/static/twigwhite.png" height="32"> Rushi
 
 Hello! My name is Rushi, a 19-year-old software developer from the India!
 
