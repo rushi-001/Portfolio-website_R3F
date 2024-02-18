@@ -1,4 +1,4 @@
-# React App Portfolio using Tailwind CSS with Vite
+# React App Portfolio with Vite
 
 > Welcome to my React App Portfolio! This portfolio showcases my projects built using React.js with Vite for fast development, and styled with Tailwind CSS for modern and responsive design.
 
