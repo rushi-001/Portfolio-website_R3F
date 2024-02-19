@@ -4,10 +4,7 @@ function App() {
 
   return (
     <>
-      <h1>Rushi Panchal</h1>
-      <p className="read-the-docs">
-        Test text
-      </p>
+      <h1 className='text-white bg-slate-600'>Rushi Panchal</h1>
     </>
   )
 }
