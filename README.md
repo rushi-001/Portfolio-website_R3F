@@ -1,6 +1,6 @@
 # <img src="src/assets/avtar-without-bg.png" height="32"> Rushi
 
-Hello! My name is Rushi, a 19-year-old software developer from the India!
+Hello! My name is Rushi,I am 19-year-old developer from the India!
 
 📑 [Portfolio](https://) | 📸 [Instagram](https://www.instagram.com/rushi.panchal.2004/)
 
