@@ -22,9 +22,9 @@ function App() {
         </div>
         <div id="section-01" className=' h-screen flex items-center'>
           <div className="AboutMe flex flex-row items-center ml-auto mr-auto">
-            <img src="src/assets/gif-0.gif" alt="photo-gif" className='rounded-md size-60'/>
+            <img src="src/assets/gif-0.gif" alt="photo-gif" className='rounded-full size-96'/>
             <span id='para'>
-              <p className='text-3xl text-white'>hello</p>
+              <p className='text-3xl text-white ml-3'>hello</p>
             </span>
           </div>
         </div>
