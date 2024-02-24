@@ -1,32 +1,28 @@
+import { useEffect, useState } from 'react';
 import './App.css'
 import TypeWritter from './TypeWritter';
 
+// >> function for typewriter
+function TypeWriter({text, delay}){
+  const [currentText, setCurrentText] = useState('');
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(()=>{
+    let timeout;
+    if(currentIndex <= text.length){
+      timeout = setTimeout(() => {
+        setCurrentText(prevText => prevText+text[currentIndex]);
+        setCurrentIndex(prevIndex => prevIndex+1);
+      }, delay);
+
+      return ()=>clearTimeout(timeout);
+    }
+  }, [currentIndex, delay, text]);
+
+  return <span>{currentText}</span>
+}
+
 function App() {
-
-  // >> function for typewriter
-  // function typeWriter({text, delay}){
-  //   const [currentText, setCurrentText] = useState('');
-  //   const [currentIndex, setCurrentIndex] = useState(0);
-
-  //   useEffect(()=>{
-  //     let timeout;
-  //     if(currentIndex <= text.length){
-  //       timeout = setTimeout(() => {
-  //         setCurrentText(prevText => prevText+text[currentIndex]);
-  //         setCurrentIndex(prevIndex => prevIndex+1);
-  //       }, delay);
-
-  //       return ()=>clearTimeout(timeout);
-  //     }else if (infinite) { 
-  //       setCurrentIndex(0);
-  //       setCurrentText('');
-  //     }
-  //   }, [currentIndex, delay, infinite, text]);
-
-  //   return <span>{currentText}</span>
-  // }
-
-
 
   return (
     <>
@@ -36,9 +32,9 @@ function App() {
             <img src="fav-icon.png" alt="logo" className='size-11' />
           </a>
           <nav className="md:ml-auto flex flex-wrap items-center text-base justify-center">
-            <a className="mr-5 hover:text-white " href='#section-01'>about me</a>
+            <a className="mr-5 hover:text-white " href='#section-01'>About Me</a>
             <a className="mr-5 hover:text-white " href='#section-02'>Projects</a>
-            <a className="mr-5 hover:text-white " href='#section-03'>Contact</a>
+            <a className="mr-5 hover:text-white " href='#section-03'>Connect</a>
           </nav>
         </div>
       </header>
@@ -47,28 +43,6 @@ function App() {
 
         </div>
         <div id="section-01" className=' h-screen flex items-center'>
-          {/* <div className="AboutMe flex flex-row items-center ml-auto mr-auto">
-
-            <img src="src/assets/gif-0.gif" alt="photo-gif" className='rounded-full size-80 mr-72'/>
-            
-            <div id='para' className='absolute right-96 mt-32 text-wrap size-96'>
-            
-              <h1 className='text-wrap text-white ml-3'>
-                - <TypeWritter text="I've been coding for a year now and have gained knowledge in HTML, CSS, JavaScript, React.js, Bootstrap, and R3F." delay={100} />
-              </h1>
-              
-              <br />
-              <h1 className='text-wrap text-white ml-3'>
-                - <TypeWritter text="I want to learn more about R3F websites & Software Development(C++, Js)." delay={100}/>
-              </h1>
-              
-              <br />
-              <h1 className='text-wrap text-white ml-3'>
-                - <TypeWritter text="I enjoy playing and video games [Chess](https://www.chess.com/member/panchalrushi) in my free time." delay={100}/>
-              </h1>
-              
-            </div>
-          </div> */}
 
           <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
 
@@ -89,20 +63,24 @@ function App() {
 
 
             <div className="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
-
-              <h1 className="title-font text-2xl mb-4 font-medium text-white">
-                - <TypeWritter text="I've been coding for a year now and have gained knowledge in HTML, CSS, JavaScript, React.js, Bootstrap, and R3F." delay={100} />
-                <br className="hidden lg:inline-block" />
-              </h1>
-              <h1 className="title-font text-2xl mb-4 font-medium text-white">
-                - <TypeWritter text="I want to learn more about R3F websites & Software Development(C++, Js)." delay={100} />
-                <br className="hidden lg:inline-block" />
-              </h1>
-              <h1 className="title-font text-2xl mb-4 font-medium text-white">
-                - <TypeWritter text="I enjoy playing and video games [Chess](https://www.chess.com/member/panchalrushi) in my free time." delay={100} />
-                <br className="hidden lg:inline-block" />
-              </h1>
-
+              <div>
+                <h1 className="title-font text-2xl mb-4 font-medium text-white">
+                  - <TypeWritter text="I've been coding for a year now and have gained knowledge in HTML, CSS, JavaScript, React.js, Bootstrap, and R3F."/>
+                  <br className="hidden lg:inline-block" />
+                </h1>
+              </div>
+              <div>
+                <h1 className="title-font text-2xl mb-4 font-medium text-white">
+                  - <TypeWritter text="I want to learn more about R3F websites & Software Development(C++, Js)."/>
+                  <br className="hidden lg:inline-block" />
+                </h1>
+              </div>
+              <div>
+                <h1 className="title-font text-2xl mb-4 font-medium text-white">
+                  - <TypeWritter text="I enjoy playing and video games (https://www.chess.com/member/panchalrushi) in my free time."/>
+                  <br className="hidden lg:inline-block" />
+                </h1>
+              </div>
             </div>
 
           </div>

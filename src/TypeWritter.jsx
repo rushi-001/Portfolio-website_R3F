@@ -1,27 +1,32 @@
 import { useState, useEffect } from 'react';
 
-const Typewriter = ({ text, delay, infinite }) => { // if u need to use infinite add {text, delay, infinite}
-  const [currentText, setCurrentText] = useState('');
+function Typewriter ({ text, delay = 300 }) {
+  const [displayText, setDisplayText] = useState('');
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [showCursor, setShowCursor] = useState(true);
 
   useEffect(() => {
-    let timeout;
-
-    if (currentIndex <= text.length) {
-      timeout = setTimeout(() => {
-        setCurrentText(prevText => prevText + text[currentIndex]);
+    const intervalId = setInterval(() => {
+      if (currentIndex < text.length) {
+        setDisplayText(prevText => prevText + text[currentIndex]);
         setCurrentIndex(prevIndex => prevIndex + 1);
-      }, delay);
+      } else {
+        clearInterval(intervalId);
+      }
+    }, delay);
 
-    } else if (infinite) { // ADD THIS CHECK
-      setCurrentIndex(0);
-      setCurrentText('');
-    }
+    return () => clearInterval(intervalId);
+  }, [text, delay, currentIndex]);
 
-    return () => clearTimeout(timeout);
-  }, [currentIndex, delay, infinite, text]);
+  useEffect(() => {
+    const cursorInterval = setInterval(() => {
+      setShowCursor(prevShow => !prevShow);
+    }, 300); // Blinking speed, change as needed
 
-  return <span>{currentText}</span>;
-};
+    return () => clearInterval(cursorInterval);
+  }, []);
+
+  return <span>{displayText} {showCursor && '|'}</span>;
+}
 
 export default Typewriter;
