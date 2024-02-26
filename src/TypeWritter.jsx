@@ -21,7 +21,7 @@ function Typewriter ({ text, delay = 300 }) {
   useEffect(() => {
     const cursorInterval = setInterval(() => {
       setShowCursor(prevShow => !prevShow);
-    }, 300); // Blinking speed, change as needed
+    }, 500); // Blinking speed, change as needed
 
     return () => clearInterval(cursorInterval);
   }, []);
