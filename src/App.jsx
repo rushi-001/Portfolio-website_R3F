@@ -61,27 +61,8 @@ function App() {
 
 
         <div id="section-01" className="h-screen flex items-center">
-          <section className="text-gray-400 body-font ">
-              <div className="container px-5 py-24 mx-auto flex flex-wrap">
-              <div className="lg:w-1/2 sm:w-1/3 w-full rounded-lg overflow-hidden mt-6 sm:mt-0">
-                  <img className="object-cover object-center rounded-full lg:w-80 lg:h-80 w-full h-auto mb-4" src="src/assets/gif-0.gif" alt="hero" />
-                </div>
-                <div className="flex flex-wrap -mx-4 mt-auto mb-auto lg:w-1/2 sm:w-2/3 content-start sm:pr-10">
-                  <div className="w-full sm:p-4 px-4 mb-6">
-                    <h1 className="title-font font-medium text-xl mb-2 text-white">Moon hashtag pop-up try-hard offal truffaut</h1>
-                    <div className="leading-relaxed">
-                      {"> "}
-                      {isInView && (
-                        <TypeWritter text="I've been coding for a year now and have gained knowledge in HTML, CSS, JavaScript, React.js, Bootstrap, and R3F." />
-                      )}
-                      <br/>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </section>
           
-          {/* <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center lg:flex-grow ">
+          <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center lg:flex-grow ">
             <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 md:mb-0 mb-10">
               <div className="lg:flex lg:flex-col lg:items-center">
                 <img
@@ -124,13 +105,13 @@ function App() {
               </div>
             </div>
 
-            <div className="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:text-left ">
+            <div className="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:text-left">
               <div>
                 <h1
                   ref={type}
-                  className="title-font text-2xl mb-4 font-medium text-white "
+                  className="title-font mb-4 font-medium text-white"
                 >
-                  {"> "}
+                  <div className="circle bg-white rounded-full w-5 h-5 flex items-center " />
                   {isInView && (
                     <TypeWritter text="I've been coding for a year now and have gained knowledge in HTML, CSS, JavaScript, React.js, Bootstrap, and R3F." />
                   )}
@@ -139,11 +120,11 @@ function App() {
               </div>
 
               <div>
+                
                 <h1
                   ref={type}
-                  className="title-font text-2xl mb-4 font-medium text-white"
+                  className="title-font mb-4 font-medium text-white"
                 >
-                  {"> "}
                   {isInView && (
                     <TypeWritter text="I want to learn more about R3F websites & Software Development(C++, Js)." />
                   )}
@@ -154,7 +135,7 @@ function App() {
               <div>
                 <h1
                   ref={type}
-                  className="title-font text-2xl mb-4 font-medium text-white"
+                  className="title-font mb-4 font-medium text-white"
                 >
                   {"> "}
                   {isInView && (
@@ -164,7 +145,7 @@ function App() {
                 </h1>
               </div>
             </div>
-          </div> */}
+          </div>
         </div>
 
         <div id="section-02" className="bg-blue-500 h-screen">

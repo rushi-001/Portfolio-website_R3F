@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 
-function Typewriter ({ text, delay = 300 }) {
+function Typewriter ({ text, delay = 50 }) {
   const [displayText, setDisplayText] = useState('');
   const [currentIndex, setCurrentIndex] = useState(0);
   const [showCursor, setShowCursor] = useState(true);
