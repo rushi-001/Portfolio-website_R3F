@@ -2,6 +2,8 @@ import { useEffect, useRef, useState } from "react";
 import "./App.css";
 import TypeWritter from "./TypeWritter";
 import { useInView } from "react-intersection-observer";
+import { MatrixRain } from "./MatrixRain";
+import CanvasAnimation from "./CanvasAnimation";
 
 // >> function for typewriter {not use this it have some problem which fixed in TyepWritter component}
 // function TypeWriter({text, delay}){
@@ -56,8 +58,13 @@ function App() {
           </nav>
         </div>
       </header>
+
       <div id="body">
-        <div id="section-00" className="bg-red-500 h-screen"></div>
+      
+        <div id="section-00" className=" h-screen">
+        {/* <MatrixRain numColumns="30" speed={100} /> */}
+        <CanvasAnimation />
+        </div>
 
 
         <div id="section-01" className="h-screen flex items-center">
@@ -111,7 +118,7 @@ function App() {
                   ref={type}
                   className="title-font mb-4 font-medium text-white"
                 >
-                  <div className="circle bg-white rounded-full w-5 h-5 flex items-center " />
+                  {"> "}
                   {isInView && (
                     <TypeWritter text="I've been coding for a year now and have gained knowledge in HTML, CSS, JavaScript, React.js, Bootstrap, and R3F." />
                   )}
@@ -119,12 +126,13 @@ function App() {
                 </h1>
               </div>
 
-              <div>
+              <div className="flex items-center">
                 
                 <h1
                   ref={type}
                   className="title-font mb-4 font-medium text-white"
                 >
+                  {"> "}
                   {isInView && (
                     <TypeWritter text="I want to learn more about R3F websites & Software Development(C++, Js)." />
                   )}
