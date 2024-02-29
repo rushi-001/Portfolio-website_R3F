@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from 'react';
+import { GlitchedText } from './GlitchedText';
 
 const CanvasAnimation = () => {
     const canvasRef = useRef(null);
@@ -7,8 +8,8 @@ const CanvasAnimation = () => {
         const canvas = canvasRef.current;
         const cxt = canvas.getContext("2d");
 
-        canvas.width = window.innerWidth * 0.99;
-        canvas.height = window.innerHeight * 0.9;
+        canvas.width = window.innerWidth * 0.991;
+        canvas.height = window.innerHeight * 0.91;
 
         // const chinese = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789-*/?.,<>~`!@#$%^&()+=";
         const chinese = "01";
@@ -46,7 +47,8 @@ const CanvasAnimation = () => {
     return (
         <div style={{ position: 'relative' }}>
             <canvas ref={canvasRef}></canvas>
-            <h1 className='text-yellow-400 z-40 text-5xl absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2'>Hello! 👋<br/>I'm Rushi.</h1>
+            {/* <h1 className='text-yellow-400 z-40 text-5xl absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2'>Hello! 👋<br/>I'm Rushi.</h1> */}
+            <GlitchedText />
         </div>
     
     );
