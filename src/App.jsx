@@ -42,7 +42,7 @@ function App() {
             className="flex title-font font-medium items-center text-white mb-4 md:mb-0"
             href="index.html"
           >
-            <img src="fav-icon.png" alt="logo" className="size-11" />
+            <img src="src/assets/avtar-bg-yellow.png" alt="logo" className="size-14 rounded-full" />
           </a>
           <nav className="md:ml-auto flex flex-wrap items-center text-base justify-center">
             <a className="mr-5 hover:text-white " href="#section-01">
