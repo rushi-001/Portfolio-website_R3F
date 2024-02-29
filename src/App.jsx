@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import "./App.css";
 import TypeWritter from "./TypeWritter";
 import { useInView } from "react-intersection-observer";
@@ -58,15 +58,14 @@ function App() {
         </div>
       </header>
 
-      <div id="body">
+      <div id="body " className="!snap-y scroll snap-mandatory !scroll-smooth">
       
-        <div id="section-00" className=" h-screen">
+        <div id="section-00" className=" h-screen md:snap-center">
         {/* <MatrixRain numColumns="30" speed={100} /> */}
         <CanvasAnimation />
         </div>
 
-
-        <div id="section-01" className="h-screen flex items-center">
+        <div id="section-01" className="h-screen flex items-center snap-center scroll-area">
           
           <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center lg:flex-grow ">
             <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 md:mb-0 mb-10">
@@ -175,10 +174,11 @@ function App() {
           </div>
         </div>
 
-        <div id="section-02" className="bg-blue-500 h-screen">
+        <div id="section-02" className="bg-blue-500 h-screen snap-center scroll-area">
           <h1>blue</h1>
         </div>
-        <div id="section-03" className="bg-green-500 h-screen">
+
+        <div id="section-03" className="bg-green-500 h-screen snap-center scroll-area">
           <h1>blue</h1>
         </div>
       </div>

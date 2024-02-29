@@ -7,16 +7,16 @@ export const GlitchedText = () => {
 
         const writeMessages = async () => {
             while (true) {
-                await wait(3000);
+                await wait(2000);
                 await Writer.write("Hello! 👋");
 
-                await wait(3000);
+                await wait(2000);
                 await Writer.write("Greetings.");
 
-                await wait(3000);
+                await wait(2000);
                 await Writer.write("I'm Rushi.");
 
-                await wait(3000);
+                await wait(2000);
                 await Writer.write("Developer.");
             }
         };
