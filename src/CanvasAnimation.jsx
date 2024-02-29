@@ -10,7 +10,8 @@ const CanvasAnimation = () => {
         canvas.width = window.innerWidth * 0.99;
         canvas.height = window.innerHeight * 0.9;
 
-        const chinese = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789-*/?.,<>~`!@#$%^&()+=";
+        // const chinese = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789-*/?.,<>~`!@#$%^&()+=";
+        const chinese = "01";
         const font_size = 12;
         const columns = canvas.width / font_size;
         const drops = Array.from({ length: columns }, () => 1);

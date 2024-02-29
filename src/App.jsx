@@ -2,7 +2,6 @@ import { useEffect, useRef, useState } from "react";
 import "./App.css";
 import TypeWritter from "./TypeWritter";
 import { useInView } from "react-intersection-observer";
-import { MatrixRain } from "./MatrixRain";
 import CanvasAnimation from "./CanvasAnimation";
 
 // >> function for typewriter {not use this it have some problem which fixed in TyepWritter component}
@@ -78,36 +77,56 @@ function App() {
                   src="src/assets/gif-0.gif"
                 />
                 <div id="icons" className="flex flex-wrap justify-center">
-                  <img
-                    alt="testimonial"
-                    className="m-2 object-cover object-center rounded-full inline-block border-2 border-gray-800 bg-gray-800 bg-opacity-10 w-14 h-14 hover:scale-75 transition-transform duration-300 ease-out"
-                    src="src/assets/html-icon.png"
-                  />
-                  <img
-                    alt="testimonial"
-                    className="m-2 object-cover object-center rounded-full inline-block border-2 border-gray-800 bg-gray-800 bg-opacity-10 w-14 h-14 hover:scale-75 transition-transform duration-300 ease-out"
-                    src="src/assets/css-icon.png"
-                  />
-                  <img
-                    alt="testimonial"
-                    className="m-2 object-cover object-center rounded-full inline-block border-2 border-gray-800 bg-gray-800 bg-opacity-10 w-14 h-14 hover:scale-75 transition-transform duration-300 ease-out"
-                    src="src/assets/js-icon.png"
-                  />
-                  <img
-                    alt="testimonial"
-                    className="m-2 object-cover object-center rounded-full inline-block border-2 border-gray-800 bg-gray-800 bg-opacity-10 w-14 h-14 hover:scale-75 transition-transform duration-300 ease-out"
-                    src="src/assets/react-icon.png"
-                  />
-                  <img
-                    alt="testimonial"
-                    className="m-2 object-cover object-center rounded-full inline-block border-2 border-gray-800 bg-gray-800 bg-opacity-10 w-14 h-14 hover:scale-75 transition-transform duration-300 ease-out"
-                    src="src/assets/tailwind-icon.png"
-                  />
-                  <img
-                    alt="testimonial"
-                    className="m-2 object-cover object-center rounded-full inline-block border-2 border-gray-800 bg-gray-800 bg-opacity-10 w-14 h-14 hover:scale-75 transition-transform duration-300 ease-out"
-                    src="src/assets/bootstrap-icon.png"
-                  />
+                  <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" className="img-link cursor-pointer">
+                    <img
+                      alt="testimonial"
+                      className="m-2 object-cover object-center rounded-full inline-block border-2 border-gray-800 bg-gray-800 bg-opacity-10 w-14 h-14 hover:scale-75 transition-transform duration-300 ease-out"
+                      src="src/assets/html-icon.png"
+                      href="www.google.com"
+                      target="_blank"
+                    />
+                  </a>
+
+                  <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" className="img-link cursor-pointer">
+                    <img
+                      alt="testimonial"
+                      className="m-2 object-cover object-center rounded-full inline-block border-2 border-gray-800 bg-gray-800 bg-opacity-10 w-14 h-14 hover:scale-75 transition-transform duration-300 ease-out"
+                      src="src/assets/css-icon.png"
+                    />
+                  </a>
+
+                  <a href="https://developer.mozilla.org/en-US/docs/Web/JAVASCRIPT" target="_blank" className="img-link cursor-pointer">
+                    <img
+                      alt="testimonial"
+                      className="m-2 object-cover object-center rounded-full inline-block border-2 border-gray-800 bg-gray-800 bg-opacity-10 w-14 h-14 hover:scale-75 transition-transform duration-300 ease-out"
+                      src="src/assets/js-icon.png"
+                    />
+                  </a>
+
+                  <a href="https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/React_getting_started" target="_blank" className="img-link cursor-pointer">
+                    <img
+                      alt="testimonial"
+                      className="m-2 object-cover object-center rounded-full inline-block border-2 border-gray-800 bg-gray-800 bg-opacity-10 w-14 h-14 hover:scale-75 transition-transform duration-300 ease-out"
+                      src="src/assets/react-icon.png"
+                    />
+                  </a>
+
+                  <a href="https://tailwindcss.com/docs/installation/play-cdn" target="_blank" className="img-link cursor-pointer">
+                    <img
+                      alt="testimonial"
+                      className="m-2 object-cover object-center rounded-full inline-block border-2 border-gray-800 bg-gray-800 bg-opacity-10 w-14 h-14 hover:scale-75 transition-transform duration-300 ease-out"
+                      src="src/assets/tailwind-icon.png"
+                    />
+                  </a>
+
+                  <a href="https://getbootstrap.com/docs/5.2/getting-started/introduction/#cdn-links" target="_blank" className="img-link cursor-pointer">
+                    <img
+                      alt="testimonial"
+                      className="m-2 object-cover object-center rounded-full inline-block border-2 border-gray-800 bg-gray-800 bg-opacity-10 w-14 h-14 hover:scale-75 transition-transform duration-300 ease-out"
+                      src="src/assets/bootstrap-icon.png"
+                    />
+                  </a>
+
                 </div>
               </div>
             </div>
