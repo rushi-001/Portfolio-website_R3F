@@ -1,16 +1,4 @@
-.circle {
-    animation: colorChange 5s infinite alternate; /* Change color every 5 seconds */
-  }
-  
-  @keyframes colorChange {
-    0% { background-color: red; }
-    25% { background-color: blue; }
-    50% { background-color: green; }
-    75% { background-color: yellow; }
-    100% { background-color: red; } 
-  }
-
-  .matrix-container {
+.matrix-container {
     display: flex;
   }
   
