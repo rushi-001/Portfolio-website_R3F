@@ -42,7 +42,7 @@ function App() {
             className="flex title-font font-medium items-center text-white mb-4 md:mb-0"
             href="index.html"
           >
-            <img src="public/avtar-bg-yellow.png" alt="logo" className="size-14 rounded-full" />
+            <img src="avtar-bg-yellow.png" alt="logo" className="size-14 rounded-full" />
           </a>
           <nav className="md:ml-auto flex flex-wrap items-center text-base justify-center">
             <a className="mr-5 hover:text-white " href="#section-01">
@@ -72,14 +72,14 @@ function App() {
                 <img
                   className="object-cover object-center rounded-full lg:w-80 lg:h-80 w-full h-auto mb-4"
                   alt="hero"
-                  src="public/gif-0.gif"
+                  src="gif-0.gif"
                 />
                 <div id="icons" className="flex flex-wrap justify-center">
                   <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" className="img-link cursor-pointer">
                     <img
                       alt="testimonial"
                       className="m-2 object-cover object-center rounded-full inline-block border-2 border-gray-800 bg-gray-800 bg-opacity-10 w-14 h-14 hover:scale-75 transition-transform duration-300 ease-out"
-                      src="public/html-icon.png"
+                      src="html-icon.png"
                       href="www.google.com"
                       target="_blank"
                     />
@@ -89,7 +89,7 @@ function App() {
                     <img
                       alt="testimonial"
                       className="m-2 object-cover object-center rounded-full inline-block border-2 border-gray-800 bg-gray-800 bg-opacity-10 w-14 h-14 hover:scale-75 transition-transform duration-300 ease-out"
-                      src="public/css-icon.png"
+                      src="css-icon.png"
                     />
                   </a>
 
@@ -97,7 +97,7 @@ function App() {
                     <img
                       alt="testimonial"
                       className="m-2 object-cover object-center rounded-full inline-block border-2 border-gray-800 bg-gray-800 bg-opacity-10 w-14 h-14 hover:scale-75 transition-transform duration-300 ease-out"
-                      src="public/js-icon.png"
+                      src="js-icon.png"
                     />
                   </a>
 
@@ -105,7 +105,7 @@ function App() {
                     <img
                       alt="testimonial"
                       className="m-2 object-cover object-center rounded-full inline-block border-2 border-gray-800 bg-gray-800 bg-opacity-10 w-14 h-14 hover:scale-75 transition-transform duration-300 ease-out"
-                      src="public/react-icon.png"
+                      src="react-icon.png"
                     />
                   </a>
 
@@ -113,7 +113,7 @@ function App() {
                     <img
                       alt="testimonial"
                       className="m-2 object-cover object-center rounded-full inline-block border-2 border-gray-800 bg-gray-800 bg-opacity-10 w-14 h-14 hover:scale-75 transition-transform duration-300 ease-out"
-                      src="public/tailwind-icon.png"
+                      src="tailwind-icon.png"
                     />
                   </a>
 
@@ -121,7 +121,7 @@ function App() {
                     <img
                       alt="testimonial"
                       className="m-2 object-cover object-center rounded-full inline-block border-2 border-gray-800 bg-gray-800 bg-opacity-10 w-14 h-14 hover:scale-75 transition-transform duration-300 ease-out"
-                      src="public/bootstrap-icon.png"
+                      src="bootstrap-icon.png"
                     />
                   </a>
 
@@ -177,7 +177,7 @@ function App() {
             <div className="container px-5 py-24 mx-auto flex flex-wrap">
               <div className="lg:w-2/3 mx-auto">
                 <div className="flex flex-wrap w-full bg-gray-800 py-32 px-10 relative mb-4 overflow-hidden">
-                  <img alt="gallery" className="hover:scale-105 transition-transform duration-300 w-full object-cover h-full object-center block opacity-25 absolute inset-0" src="public/cover-img1.png" />
+                  <img alt="gallery" className="hover:scale-105 transition-transform duration-300 w-full object-cover h-full object-center block opacity-25 absolute inset-0" src="cover-img1.png" />
                   <div className="text-center relative z-10 w-full">
                     <h2 className="text-2xl text-white font-medium title-font mb-2">{"Wallpapers(ReactAPP)"}</h2>
                     <p className="leading-relaxed">This application allows users to search for photos using the Pixabay API.</p>
@@ -197,7 +197,7 @@ function App() {
                 <div className="flex flex-wrap -mx-2">
                   <div className="px-2 w-1/2">
                     <div className="flex flex-wrap w-full bg-gray-800 sm:py-24 py-16 sm:px-10 px-6 relative overflow-hidden">
-                      <img alt="gallery" className="hover:scale-105 transition-transform duration-300 w-full object-cover h-full object-center block opacity-25 absolute inset-0" src="public/cover-img2.png" />
+                      <img alt="gallery" className="hover:scale-105 transition-transform duration-300 w-full object-cover h-full object-center block opacity-25 absolute inset-0" src="cover-img2.png" />
                       <div className="text-center relative z-10 w-full">
                         <h2 className="text-xl text-white font-medium title-font mb-2">Quote Finder</h2>
                         <p className="leading-relaxed">Displays a random quotes using API & more.</p>
@@ -217,7 +217,7 @@ function App() {
 
                   <div className="px-2 w-1/2">
                     <div className="flex flex-wrap w-full bg-gray-800 sm:py-24 py-16 sm:px-10 px-6 relative overflow-hidden">
-                      <img alt="gallery" className="hover:scale-105 transition-transform duration-300 w-full object-cover h-full object-center block opacity-25 absolute inset-0" src="public/cover-img3.png" />
+                      <img alt="gallery" className="hover:scale-105 transition-transform duration-300 w-full object-cover h-full object-center block opacity-25 absolute inset-0" src="cover-img3.png" />
                       <div className="text-center relative z-10 w-full">
                         <h2 className="text-xl text-white font-medium title-font mb-2">Todo List</h2>
                         <p className="leading-relaxed">Users can add, delete, and mark tasks as completed.</p>
@@ -249,16 +249,16 @@ function App() {
             </h1>
             <span className="mt-5 flex flex-row">
               <a href="https://www.linkedin.com/in/rushi-panchal-b58730239/">
-                <img src="public/linkedin-icon.png" alt="linkedIn-icon" className="transition-transform duration-300 transform hover:scale-110 h-20 w-20 m-3" />
+                <img src="linkedin-icon.png" alt="linkedIn-icon" className="transition-transform duration-300 transform hover:scale-110 h-20 w-20 m-3" />
               </a>
               <a href="https://www.linkedin.com/in/rushi-panchal-b58730239/">
-                <img src="public/x-icon.png" alt="linkedIn-icon" className="transition-transform duration-300 transform hover:scale-110 h-20 w-20 m-3"/>
+                <img src="x-icon.png" alt="linkedIn-icon" className="transition-transform duration-300 transform hover:scale-110 h-20 w-20 m-3"/>
               </a>
               <a href="https://www.linkedin.com/in/rushi-panchal-b58730239/">
-                <img src="public/instagram-icon.png" alt="linkedIn-icon" className="transition-transform duration-300 transform hover:scale-110 h-20 w-20 m-3"/>
+                <img src="instagram-icon.png" alt="linkedIn-icon" className="transition-transform duration-300 transform hover:scale-110 h-20 w-20 m-3"/>
               </a>
               <a href="https://www.linkedin.com/in/rushi-panchal-b58730239/">
-                <img src="public/github-icon.png" alt="linkedIn-icon" className="transition-transform duration-300 transform hover:scale-110 h-20 w-20 m-3"/>
+                <img src="github-icon.png" alt="linkedIn-icon" className="transition-transform duration-300 transform hover:scale-110 h-20 w-20 m-3"/>
               </a>
             </span>
 
@@ -270,7 +270,7 @@ function App() {
           <div className="bg-black">
             <div className="container px-5 py-6 mx-auto flex items-center sm:flex-row flex-col">
               <a className="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
-                <img src="public/avtar-bg-yellow.png" alt="logo" viewBox="0 0 24 24" fill="none" className="w-10 h-10 text-white rounded-full" />
+                <img src="avtar-bg-yellow.png" alt="logo" viewBox="0 0 24 24" fill="none" className="w-10 h-10 text-white rounded-full" />
                 <span className="text-gray-400 ml-3 text-xl">Rushi Panchal</span>
               </a>
               <p className="text-sm text-gray-500 sm:ml-6 sm:mt-0 mt-4">© 2024 Rushi Panchal —
@@ -278,7 +278,7 @@ function App() {
               </p>
               <span className="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
                 <a href="mailto:panchalrushi2182004@gmail.com" className="text-gray-500">
-                  <img src="public/email-icon.png" alt="logo" viewBox="0 0 24 24" fill="none" className="w-10 h-10 text-white" />
+                  <img src="email-icon.png" alt="logo" viewBox="0 0 24 24" fill="none" className="w-10 h-10 text-white" />
                 </a>
               </span>
             </div>
