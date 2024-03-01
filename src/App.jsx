@@ -186,7 +186,7 @@ function App() {
                         <path d="M5 12h14M12 5l7 7-7 7" />
                       </svg>
                     </a><br />
-                    <a target="_blank" href="https://photo-finder-by-rushi.onrender.com/" className="mt-3 text-indigo-300 inline-flex items-center">Visit Site
+                    <a target="_blank" href="https://photo-finder-by-rushi.netlify.app/" className="mt-3 text-indigo-300 inline-flex items-center">Visit Site
                           <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} className="w-4 h-4 ml-2" viewBox="0 0 24 24">
                             <path d="M5 12h14M12 5l7 7-7 7" />
                           </svg>
