@@ -251,14 +251,14 @@ function App() {
               <a href="https://www.linkedin.com/in/rushi-panchal-b58730239/">
                 <img src="linkedin-icon.png" alt="linkedIn-icon" className="transition-transform duration-300 transform hover:scale-110 h-20 w-20 m-3" />
               </a>
-              <a href="https://www.linkedin.com/in/rushi-panchal-b58730239/">
-                <img src="x-icon.png" alt="linkedIn-icon" className="transition-transform duration-300 transform hover:scale-110 h-20 w-20 m-3"/>
+              <a href="https://twitter.com/RUSHI76270899">
+                <img src="x-icon.png" alt="x-icon" className="transition-transform duration-300 transform hover:scale-110 h-20 w-20 m-3"/>
               </a>
-              <a href="https://www.linkedin.com/in/rushi-panchal-b58730239/">
-                <img src="instagram-icon.png" alt="linkedIn-icon" className="transition-transform duration-300 transform hover:scale-110 h-20 w-20 m-3"/>
+              <a href="https://www.instagram.com/rushi.panchal.2004/">
+                <img src="instagram-icon.png" alt="instagram-icon" className="transition-transform duration-300 transform hover:scale-110 h-20 w-20 m-3"/>
               </a>
-              <a href="https://www.linkedin.com/in/rushi-panchal-b58730239/">
-                <img src="github-icon.png" alt="linkedIn-icon" className="transition-transform duration-300 transform hover:scale-110 h-20 w-20 m-3"/>
+              <a href="https://github.com/rushi-001">
+                <img src="github-icon.png" alt="github-icon" className="transition-transform duration-300 transform hover:scale-110 h-20 w-20 m-3"/>
               </a>
             </span>
 
