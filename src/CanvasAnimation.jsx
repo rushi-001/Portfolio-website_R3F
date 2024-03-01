@@ -13,13 +13,13 @@ const CanvasAnimation = () => {
 
         const chinese = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789-*/?.,<>~`!@#$%^&()+=";
         // const chinese = "01";
-        const font_size = 10;
+        const font_size = 12;
         const columns = canvas.width / font_size;
         const drops = Array.from({ length: columns }, () => 1);
         const text = "Hello";
 
         const draw = () => {
-            cxt.fillStyle = "rgba(0,0,0,0.10";
+            cxt.fillStyle = "rgba(0,0,0,0.12";
             cxt.fillRect(0, 0, canvas.width, canvas.height);
 
             cxt.fillStyle = "#0F0";
@@ -45,7 +45,7 @@ const CanvasAnimation = () => {
     }, []);
 
     return (
-        <div className='h-screen'>
+        <div style={{ position: 'relative' }}>
             <canvas ref={canvasRef}></canvas>
             {/* <h1 className='text-yellow-400 z-40 text-5xl absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2'>Hello! 👋<br/>I'm Rushi.</h1> */}
             <GlitchedText />
