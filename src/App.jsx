@@ -56,7 +56,7 @@ function App() {
             </a>
 
             <button className="custom-btn btn-14 m-3 pb-3 pr-3 pl-3">
-              <a href="public/Resume-Rushi-Panchal.pdf" download="Resume-Rushi-Panchal.pdf">
+              <a href="Resume-Rushi-Panchal.pdf" download="Resume-Rushi-Panchal.pdf">
                 <span>Download CV</span>
               </a>
             </button>
